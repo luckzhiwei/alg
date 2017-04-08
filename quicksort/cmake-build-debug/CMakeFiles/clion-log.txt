@@ -1,0 +1,24 @@
+/home/lzw/CLion/clion-2016.3.5/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/lzw/alg/alg/quicksort
+CMake Warning (dev) in CMakeLists.txt:
+  Syntax Warning in cmake code at
+
+    /home/lzw/alg/alg/quicksort/CMakeLists.txt:8:37
+
+  Argument not separated from preceding token by whitespace.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- This is BINARY dir 
+-- This is SOURCE dir 
+CMake Warning (dev) in CMakeLists.txt:
+  No cmake_minimum_required command is present.  A line of code such as
+
+    cmake_minimum_required(VERSION 3.6)
+
+  should be added at the top of the file.  The version specified may be lower
+  if you wish to support older CMake versions for this project.  For more
+  information run "cmake --help-policy CMP0000".
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lzw/alg/alg/quicksort

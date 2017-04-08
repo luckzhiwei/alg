@@ -1,0 +1,3 @@
+/home/lzw/alg/alg/quicksort/CMakeFiles/edit_cache.dir
+/home/lzw/alg/alg/quicksort/CMakeFiles/rebuild_cache.dir
+/home/lzw/alg/alg/quicksort/CMakeFiles/quickSort.dir
