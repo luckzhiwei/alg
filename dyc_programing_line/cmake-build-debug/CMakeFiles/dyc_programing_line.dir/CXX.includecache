@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
+/Users/zhiwei/alg/dyc_programing_line/Pipeline.cpp
+Pipeline.h
+/Users/zhiwei/alg/dyc_programing_line/Pipeline.h
+
+/Users/zhiwei/alg/dyc_programing_line/Pipeline.h
+vector
+-
+iostream
+-
+map
+-
+stack
+-
+
 /Users/zhiwei/alg/dyc_programing_line/main.cpp
 iostream
 -
+Pipeline.h
+/Users/zhiwei/alg/dyc_programing_line/Pipeline.h
 
