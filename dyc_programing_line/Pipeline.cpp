@@ -52,7 +52,7 @@ void Pipeline::findPath() {
 }
 
 void Pipeline::outputLine() {
-    int choose = -1;
+    int choose;
     stack<int> pathOutput;
     if (this->mCostPipeline1[this->mLen - 1] < this->mCostPipeline2[this->mLen - 1]) {
         choose = 1;
