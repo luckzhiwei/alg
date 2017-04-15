@@ -45,6 +45,5 @@ int main() {
     int num = findBestNumberOfCoins(coins, 15);
     cout << "the best number of coins is" << endl;
     cout << num << endl;
-    
     return 0;
 }
