@@ -30,7 +30,7 @@ int findBestNumberOfBlank(const vector<int> &verbs, int cap) {
             if (j == 1) {
                 table[i][j].sumOfBlankNumber = 0;
                 table[i][j].subCapOfLastLine = i - verbs[j - 1];
-            } else { 
+            } else {
                 // if can not put the verb into this line,new line ,number of blank is sum of before
                 if (table[i][j - 1].subCapOfLastLine - 1 < verbs[j - 1]) {
                     table[i][j].sumOfBlankNumber = table[i][j - 1].sumOfBlankNumber + table[i][j - 1].subCapOfLastLine;
