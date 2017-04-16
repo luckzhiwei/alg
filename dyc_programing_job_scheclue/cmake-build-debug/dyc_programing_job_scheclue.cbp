@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/Job.cpp">
+			<Option target="dyc_programing_job_scheclue"/>
+		</Unit>
+		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/Job.h">
+			<Option target="dyc_programing_job_scheclue"/>
+		</Unit>
 		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/main.cpp">
 			<Option target="dyc_programing_job_scheclue"/>
 		</Unit>
