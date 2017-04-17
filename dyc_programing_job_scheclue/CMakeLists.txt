@@ -3,5 +3,5 @@ project(dyc_programing_job_scheclue)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp Job.cpp Job.h)
+set(SOURCE_FILES main.cpp "Scheduler.cpp" "Scheduler.h")
 add_executable(dyc_programing_job_scheclue ${SOURCE_FILES})
