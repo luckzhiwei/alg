@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o"
-  "CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o"
+  "CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o"
   "dyc_programing_job_scheclue.pdb"
   "dyc_programing_job_scheclue"
 )

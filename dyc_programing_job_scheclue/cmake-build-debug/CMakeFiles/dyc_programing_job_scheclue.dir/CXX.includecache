@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.cpp
+Scheduler.h
+/Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.h
+algorithm
+-
+
+/Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.h
+iostream
+-
+vector
+-
+
+/Users/zhiwei/alg/dyc_programing_job_scheclue/main.cpp
+iostream
+-
+Scheduler.h
+/Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.h
+

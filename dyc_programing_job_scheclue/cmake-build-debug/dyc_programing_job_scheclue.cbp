@@ -80,10 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/Job.cpp">
+		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.cpp">
 			<Option target="dyc_programing_job_scheclue"/>
 		</Unit>
-		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/Job.h">
+		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.h">
 			<Option target="dyc_programing_job_scheclue"/>
 		</Unit>
 		<Unit filename="/Users/zhiwei/alg/dyc_programing_job_scheclue/main.cpp">

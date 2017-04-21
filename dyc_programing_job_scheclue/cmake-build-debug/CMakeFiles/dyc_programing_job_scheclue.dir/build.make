@@ -81,40 +81,40 @@ CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o.provides: CMakeFiles/dyc_p
 CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o.provides.build: CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o
 
 
-CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o: CMakeFiles/dyc_programing_job_scheclue.dir/flags.make
-CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o: ../Job.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiwei/alg/dyc_programing_job_scheclue/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o -c /Users/zhiwei/alg/dyc_programing_job_scheclue/Job.cpp
+CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o: CMakeFiles/dyc_programing_job_scheclue.dir/flags.make
+CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o: ../Scheduler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhiwei/alg/dyc_programing_job_scheclue/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o -c /Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.cpp
 
-CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiwei/alg/dyc_programing_job_scheclue/Job.cpp > CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.i
+CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.cpp > CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.i
 
-CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiwei/alg/dyc_programing_job_scheclue/Job.cpp -o CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.s
+CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhiwei/alg/dyc_programing_job_scheclue/Scheduler.cpp -o CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.s
 
-CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.requires:
+CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.requires:
 
-.PHONY : CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.requires
+.PHONY : CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.requires
 
-CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.provides: CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.requires
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.provides.build
-.PHONY : CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.provides
+CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.provides: CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.requires
+	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.provides.build
+.PHONY : CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.provides
 
-CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.provides.build: CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o
+CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.provides.build: CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o
 
 
 # Object files for target dyc_programing_job_scheclue
 dyc_programing_job_scheclue_OBJECTS = \
 "CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o" \
-"CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o"
+"CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o"
 
 # External object files for target dyc_programing_job_scheclue
 dyc_programing_job_scheclue_EXTERNAL_OBJECTS =
 
 dyc_programing_job_scheclue: CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o
-dyc_programing_job_scheclue: CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o
+dyc_programing_job_scheclue: CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o
 dyc_programing_job_scheclue: CMakeFiles/dyc_programing_job_scheclue.dir/build.make
 dyc_programing_job_scheclue: CMakeFiles/dyc_programing_job_scheclue.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zhiwei/alg/dyc_programing_job_scheclue/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable dyc_programing_job_scheclue"
@@ -126,7 +126,7 @@ CMakeFiles/dyc_programing_job_scheclue.dir/build: dyc_programing_job_scheclue
 .PHONY : CMakeFiles/dyc_programing_job_scheclue.dir/build
 
 CMakeFiles/dyc_programing_job_scheclue.dir/requires: CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o.requires
-CMakeFiles/dyc_programing_job_scheclue.dir/requires: CMakeFiles/dyc_programing_job_scheclue.dir/Job.cpp.o.requires
+CMakeFiles/dyc_programing_job_scheclue.dir/requires: CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o.requires
 
 .PHONY : CMakeFiles/dyc_programing_job_scheclue.dir/requires
 

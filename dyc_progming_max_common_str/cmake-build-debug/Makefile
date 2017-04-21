@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zhiwei/alg/dyc_programing_job_scheclue
+CMAKE_SOURCE_DIR = /Users/zhiwei/alg/dyc_progming_max_str
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zhiwei/alg/dyc_programing_job_scheclue/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zhiwei/alg/dyc_progming_max_str/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhiwei/alg/dyc_programing_job_scheclue/cmake-build-debug/CMakeFiles /Users/zhiwei/alg/dyc_programing_job_scheclue/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhiwei/alg/dyc_progming_max_str/cmake-build-debug/CMakeFiles /Users/zhiwei/alg/dyc_progming_max_str/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhiwei/alg/dyc_programing_job_scheclue/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhiwei/alg/dyc_progming_max_str/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named dyc_programing_job_scheclue
+# Target rules for targets named dyc_progming_max_str
 
 # Build rule for target.
-dyc_programing_job_scheclue: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dyc_programing_job_scheclue
-.PHONY : dyc_programing_job_scheclue
+dyc_progming_max_str: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dyc_progming_max_str
+.PHONY : dyc_progming_max_str
 
 # fast build rule for target.
-dyc_programing_job_scheclue/fast:
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/build
-.PHONY : dyc_programing_job_scheclue/fast
-
-Scheduler.o: Scheduler.cpp.o
-
-.PHONY : Scheduler.o
-
-# target to build an object file
-Scheduler.cpp.o:
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.o
-.PHONY : Scheduler.cpp.o
-
-Scheduler.i: Scheduler.cpp.i
-
-.PHONY : Scheduler.i
-
-# target to preprocess a source file
-Scheduler.cpp.i:
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.i
-.PHONY : Scheduler.cpp.i
-
-Scheduler.s: Scheduler.cpp.s
-
-.PHONY : Scheduler.s
-
-# target to generate assembly for a file
-Scheduler.cpp.s:
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/Scheduler.cpp.s
-.PHONY : Scheduler.cpp.s
+dyc_progming_max_str/fast:
+	$(MAKE) -f CMakeFiles/dyc_progming_max_str.dir/build.make CMakeFiles/dyc_progming_max_str.dir/build
+.PHONY : dyc_progming_max_str/fast
 
 main.o: main.cpp.o
 
@@ -156,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/dyc_progming_max_str.dir/build.make CMakeFiles/dyc_progming_max_str.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/dyc_progming_max_str.dir/build.make CMakeFiles/dyc_progming_max_str.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +147,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/dyc_programing_job_scheclue.dir/build.make CMakeFiles/dyc_programing_job_scheclue.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/dyc_progming_max_str.dir/build.make CMakeFiles/dyc_progming_max_str.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -185,10 +158,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... dyc_programing_job_scheclue"
-	@echo "... Scheduler.o"
-	@echo "... Scheduler.i"
-	@echo "... Scheduler.s"
+	@echo "... dyc_progming_max_str"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
