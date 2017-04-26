@@ -19,7 +19,6 @@ int main()
     int itemnum=4;
     //int k[10][4];
 
-
     vector<vector<int> > k(11,vector<int>(5));
     item items[4]={{7,30},{3,14},{4,16},{2,9}};
 
