@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#define  -oo -22222222
+#define oo -22222222
 using namespace std;
 
 class Ret {
@@ -13,6 +13,7 @@ public:
     int high;
     int sum;
 };
+
 
 vector<int> init() {
     vector<int> prices;
@@ -39,7 +40,7 @@ vector<int> init() {
 Ret findMaxSubArrCross(vector<int> &arr, int low, int mid, int high) {
     int left;
     int right;
-    int sumLeftMax = - oo;
+    int sumLeftMax = oo;
     int sumLeft = 0;
     for (int i = mid; i >= low; i--) {
         sumLeft += arr[i];
@@ -48,7 +49,7 @@ Ret findMaxSubArrCross(vector<int> &arr, int low, int mid, int high) {
             left = i;
         }
     }
-    int sumRightMax = - oo;
+    int sumRightMax =  oo;
     int sumRight = 0;
     for (int i = mid + 1; i <= high; i++) {
         sumRight += arr[i];
@@ -68,7 +69,9 @@ Ret findMaxSubArr(vector<int> &arr, int low, int high) {
         int mid = (low + high) / 2;
         Ret letfRet = findMaxSubArr(arr, low, mid);
         Ret rightRet = findMaxSubArr(arr, mid + 1, high);
+        // 归并过程 O(n)
         Ret crossRet = findMaxSubArrCross(arr, low, mid, high);
+
         if (letfRet.sum > rightRet.sum && letfRet.sum > crossRet.sum) {
             return letfRet;
         } else if (rightRet.sum > letfRet.sum && rightRet.sum > crossRet.sum) {
@@ -80,11 +83,12 @@ Ret findMaxSubArr(vector<int> &arr, int low, int high) {
 }
 
 int main() {
-
     vector<int> prices = init();
     vector<int> arr;
     for (int i = 0; i < prices.size() - 1; i++) {
         arr.push_back(prices[i + 1] - prices[i]);
     }
+    Ret ret = findMaxSubArr(arr, 0, arr.size() - 1);
+    cout << ret.sum << endl;
     return 0;
 }
