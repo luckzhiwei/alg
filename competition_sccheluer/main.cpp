@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#define NUM 16;
+#define NUM 16
 using namespace std;
 
 void competitionScheuler(vector<vector<int>> &table, int p, int q) {
@@ -32,15 +32,14 @@ void competitionScheuler(vector<vector<int>> &table, int p, int q) {
 
 int main() {
     vector<vector<int>> table;
-    int a = NUM;
-    table.resize(a);
-    for (int i = 0; i < a; i++) {
-        table[i].resize(a - 1);
+    table.resize(NUM);
+    for (int i = 0; i < NUM; i++) {
+        table[i].resize(NUM - 1);
     }
-    competitionScheuler(table, 0, a - 1);
-    for (int i = 0; i < a; i++) {
+    competitionScheuler(table, 0, NUM - 1);
+    for (int i = 0; i < NUM; i++) {
         cout << "the " << i << "th" << endl;
-        for (int j = 0; j < a - 1; j++) {
+        for (int j = 0; j < NUM - 1; j++) {
             cout << table[i][j] << "\t";
         }
         cout << "\n";
