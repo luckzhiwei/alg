@@ -4,7 +4,6 @@
 using namespace std;
 
 class Solution {
-public:
     vector<vector<int>> combines;
 
     void combine(vector<int> oneCombine, int n, int number, int k) {
@@ -38,13 +37,5 @@ public:
 };
 
 int main() {
-    Solution sl;
-    vector<vector<int>> combines = sl.combine(5, 3);
-    for (int i = 0; i < combines.size(); i++) {
-        for (int j = 0; j < combines[i].size(); j++) {
-            cout << combines[i][j];
-        }
-        cout << "\n";
-    }
     return 0;
 }
