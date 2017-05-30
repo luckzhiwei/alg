@@ -23,12 +23,19 @@
   
   1. [活动调度问题 算法导论第二版第16章第1节](./greedy_activity_sechuler)
   2. [贪心算法理论基础--拟阵应用--0-1活动调度 算法导论第二版第16章第5节](./greedy_job_sechuler)
+  3. [贪心算法---Dijkstra算法]()
 
 ### 回溯法：
   1. [N皇后问题](./queues)
   2. [组合问题](./combination)
   3. [无重复全排列问题](./arrangement)
-  4. [深度优先遍历](./)
+  4. [深度优先遍历](./graph/depth_traverse)
 
 ### 排序： 
   1. [堆排序](./heap_sort)  
+
+### 图论算法：
+  1. [BFS 广度优先遍历](./graph/breath_first_search)
+  2. [Prim 算法](./graph/prim)
+  3. [Kruskal 算法](./graph/kruskal)
+  

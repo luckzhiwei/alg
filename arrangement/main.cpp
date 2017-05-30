@@ -32,7 +32,7 @@ public:
         }
     }
 
-    bool isUsed(vector<int> oneArragement, int num) {
+    bool isUsed(vector<int> & oneArragement, int num) {
         for (auto it = oneArragement.begin(); it != oneArragement.end(); it++) {
             if (*it == num) {
                 return true;
@@ -45,6 +45,5 @@ public:
 int main() {
     Solution sl;
     vector<int> nums{1, 2, 3};
-    sl.permute(nums);
     return 0;
 }
