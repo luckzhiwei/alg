@@ -38,4 +38,5 @@
   1. [BFS 广度优先遍历](./graph/breath_first_search)
   2. [Prim 算法](./graph/prim)
   3. [Kruskal 算法](./graph/kruskal)
+  4. [dijkstra 算法](./graph/dijkstra)
   
