@@ -49,15 +49,29 @@ void init(const vector<string> &info, int nodesCount) {
     }
 }
 
+int getEnd(vector<int> &vends, int i) {
+    while (vends[i] != 0) {
+        i = vends[i];
+    }
+    return i;
+}
+
+
 void kruskal() {
     set<int> vSet;
     sort(egdes.begin(), egdes.end(), [](const Egde &e1, const Egde &e2) {
         return e1.mWeight < e2.mWeight;
     });
+    vector<int> vends;
+    vends.resize(points.size() + 1, 0);
+
     for (auto it = egdes.begin(); it != egdes.end(); it++) {
-        if (vSet.find(it->mStart) == vSet.end() || vSet.find(it->mEnd) == vSet.end()) {
-            vSet.insert(it->mStart);
-            vSet.insert(it->mEnd);
+        int start = it->mStart;
+        int end = it->mEnd;
+        int m = getEnd(vends, start);
+        int n = getEnd(vends, end);
+        if (m != n) {
+            vends[m] = n;
             tree.push_back(*it);
         }
     }
