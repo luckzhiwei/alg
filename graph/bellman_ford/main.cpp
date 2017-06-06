@@ -34,7 +34,6 @@ public:
 
 
 vector<Node> points;
-
 vector<Edge> edges;
 
 void init(vector<string> &info, int nodesCount) {
@@ -70,6 +69,7 @@ void doReleax(vector<int> &disTable, int u, int v, int w) {
  * bellman-ford 是 v*e 的复杂度，为什么呢？
  * 只要没有负向环，那么，bellman-ford 在经过v*e次的松弛之后，
  * 确实可以求解。（因为bellman-ford在v*e次之后，保证了先前松弛过的点，在后续松弛过程后，能再次进一步的松弛）
+ * 所以bellman-ford效率很低，改进的算法是spfa 算法
  */
 
 

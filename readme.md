@@ -39,5 +39,6 @@
   2. [Prim 算法](./graph/prim)
   3. [Kruskal 算法](./graph/kruskal)
   4. [Dijkstra 算法](./graph/dijkstra)
-  5. []()
+  5. [Bellman-ford 算法](./graph/bellman_ford)
+  6. [Spfa 算法](./graph/spfa)
   
