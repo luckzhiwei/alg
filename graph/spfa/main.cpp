@@ -85,6 +85,8 @@ void spfa(int num) {
     }
 }
 
+
+
 int main() {
     vector<string> info;
     info.push_back(string("1 2 6"));

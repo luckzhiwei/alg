@@ -1,76 +1,43 @@
-
+#include <algorithm>
 #include <iostream>
-#include<fstream>
-#include<algorithm>
-#include<vector>
+#include <vector>
 
-//存储元素的结构
-typedef struct item
-{
-    int weight;
-    int values;
-}item;
+using namespace std;
+
+class Item {
+public:
+    Item(int w, int v) : w(w), v(v) {}
+
+    int w;
+    int v;
+};
 
 
 using namespace std;
-int main()
-{
-    int weight=10;
-    int itemnum=4;
-    //int k[10][4];
 
-    vector<vector<int> > k(11,vector<int>(5));
-    item items[4]={{7,30},{3,14},{4,16},{2,9}};
+int main() {
 
 
-    for(int w=0;w<=weight;w++)
-    {
-        for(int j=0;j<=itemnum;j++)
-        {
-            k[w][j]=0;
-        }
+    vector<Item> items = {{5, 20},
+                          {4, 10},
+                          {3, 12}};
+    int w = 10;
 
+    vector<vector<int>> tables;
+    tables.resize(w + 1);
+    for (int i = 0; i < tables.size(); i++) {
+        tables[i].resize(items.size() + 1, 0);
     }
 
-    //输出数组
-    for(int i=0;i<=weight;i++)
-    {
-        for(int j=0;j<=itemnum;j++)
-        {
-            cout<<k[i][j];
-        }
-        cout<<"\n";
-    }
-
-
-    for(int w=1;w<=weight;w++)
-    {
-        cout<<"测试\n";
-        for(int j=1;j<=itemnum;j++)
-        {
-            if(items[j-1].weight>w)        //物品质量大于背包容量，舍去
-            {
-                k[w][j]=k[w][j-1];
+    for (int i = 1; i <= w; i++) {
+        for (int j = 1; j <= items.size(); j++) {
+            if (i < items[j - 1].w) {
+                tables[i][j] = tables[i][j - 1];
+            } else {
+                tables[i][j] = max(tables[i - items[j - 1].w][j - 1] + items[j - 1].v, tables[i][j - 1]);
             }
-            else        //对于两种情况选出较大值,选择这个物品或者不选择这个物品
-            {
-                k[w][j]=max(k[w][j-1],(k[w-items[j-1].weight][j-1]+items[j-1].values));
-            }
-            cout<<"k["<<w<<"]["<<j<<"]="<<k[w][j]<<"\n";
-
         }
-
     }
 
-    cout<<"输出哦了"<<k[weight][itemnum]<<"\n";
-
-    for(int i=0;i<=weight;i++)
-    {
-        for(int j=0;j<=itemnum;j++)
-        {
-            cout<<k[i][j]<<" ";
-        }
-        cout<<"\n";
-    }
 
 }

@@ -119,7 +119,6 @@ int main() {
     dijkstra(1);
 
     for (auto it = graph[0]->disTable.begin(); it != graph[0]->disTable.end(); it++) {
-
         int dis = distance(graph[0]->disTable.begin(), it);
         if (dis == 0) {
             continue;
