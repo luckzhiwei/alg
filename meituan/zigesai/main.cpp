@@ -1,95 +1,34 @@
-#include <iostream>
-#include <vector>
-#include <math.h>
-#include <cstdio>
+/* Dynamic Programming C/C++ implementation of LIS problem */
+#include<stdio.h>
+#include<stdlib.h>
 
-using namespace std;
+int lis(int arr[], int n) {
+    int *lis, i, j, max = 0;
+    lis = (int *) malloc(sizeof(int) * n);
 
-class Node {
-public:
-    Node() : canVisisted(true) {};
-    int w;
-    bool canVisisted;
-};
+    for (i = 0; i < n; i++)
+        lis[i] = 1;
 
-class Solution {
-public:
-    vector<Node> arr1;
-    vector<Node> arr2;
-    int n;
 
-    Solution(int n) : n(n) {
-        arr1.resize(n);
-        arr2.resize(n);
-        for (int i = 0; i < n; i++) {
-            int x;
-            scanf("%d", &x);
-            arr1[i].w = x;
-        }
-        for (int i = 0; i < n; i++) {
-            int x;
-            scanf("%d", &x);
-            arr2[i].w = x;
-        }
+    for (i = 1; i < n; i++)
+        for (j = 0; j < i; j++)
+            if (arr[i] > arr[j] && lis[i] < lis[j] + 1)
+                lis[i] = lis[j] + 1;
 
-        int num1 = arr1[0].w;
-        int num2 = arr2[0].w;
+    for (i = 0; i < n; i++)
+        if (max < lis[i])
+            max = lis[i];
 
-        if (!this->judgeNumisUnVaild(num1, num2, arr1[0].w, arr2[0].w)) {
-            cout << "No solution!" << endl;
-        }
-    }
 
-    bool searchPath(int i, string path) {
+    free(lis);
 
-        int num1 = arr1[i].w + i;
-        int num2 = arr2[i].w + i;
+    return max;
+}
 
-        if (!this->judgeNumisUnVaild(num1, num2, arr1[i].w, arr2[i].w)) {
-            return false;
-        }
-
-        if (this->judgeNumisVaild(num1, num2, path)) {
-            return true;
-        }
-
-    }
-
-    bool judgeNumisUnVaild(int n1, int n2, int w1, int w2) {
-        if (w1 == 0 && w2 == 0) {
-            return false;
-        }
-        if ((n1 < 0 || n1 >= n) && (n2 < 0 || n2 >= n)) {
-            return false;
-        }
-
-        if ((n1 < 0 || n1 >= n) && w1 == 0) {
-            return false;
-        }
-
-        if ((n2 < 0 || n2 >= n) && w2 == 0) {
-            return false;
-        }
-        return true;
-    }
-
-    bool judgeNumisVaild(int n1, int n2, string path) {
-        if (n1 == n - 1) {
-            path = path + 'a';
-            cout << path << endl;
-            return true;
-        } else if (n2 == n - 1) {
-            path = path + 'b';
-            cout << path << endl;
-            return true;
-        }
-        return false;
-    }
-};
 
 int main() {
-    int n;
-    cin >> n;
-    Solution sl(n);
-
+    int arr[] = {10, 22, 9, 33, 21, 50, 41, 60};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    printf("Length of lis is %d\n", lis(arr, n));
+    return 0;
 }

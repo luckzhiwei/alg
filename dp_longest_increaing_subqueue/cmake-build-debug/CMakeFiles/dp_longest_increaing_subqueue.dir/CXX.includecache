@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhiwei/alg/meituan/zigesai/main.cpp
+/Users/zhiwei/alg/dp_longest_increaing_subqueue/main.cpp
 iostream
 -
 vector
--
-algorithm
 -
 

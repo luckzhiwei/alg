@@ -18,6 +18,7 @@
   5. [棋盘移动问题---算法导论第二版本15章课后习题第六题](./dyc_programing_chessborad_question)
   6. [任务最大效应安排问题--算法导论第二版本15章课后习题第七题](./dyc_programing_job_scheclue)
   7. [最大回文字符串--算法导论第三版15章课后习题第二题](./dyc_programing_max_plalindrome)
+  8. [最长递增子序列](./dp_longest_increaing_subqueue)
 
 ### 贪心法 
   
