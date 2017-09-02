@@ -38,9 +38,12 @@
 
 ### 图论算法：
   1. [BFS 广度优先遍历](./graph/breath_first_search)
+    * [bfs 拓扑排序](./graph/top_sort_iml_dfs)
   2. [Prim 算法](./graph/prim)
   3. [Kruskal 算法](./graph/kruskal)
   4. [Dijkstra 算法](./graph/dijkstra)
   5. [Bellman-ford 算法](./graph/bellman_ford)
   6. [Spfa 算法](./graph/spfa)
+  7. [拓扑排序](./graph/top_sort_iml_pri_queue)
+  
   
