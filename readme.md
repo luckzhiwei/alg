@@ -25,6 +25,7 @@
   1. [活动调度问题 算法导论第二版第16章第1节](./greedy_activity_sechuler)
   2. [贪心算法理论基础--拟阵应用--0-1活动调度 算法导论第二版第16章第5节](./greedy_job_sechuler)
   3. [贪心算法---Dijkstra算法](./graph/dijkstra)
+  4. [贪心算法---最小生成树](./greedy_unit_set)
 
 ### 回溯法：
   1. [N皇后问题](./queues)

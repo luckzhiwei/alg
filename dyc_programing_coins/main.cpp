@@ -34,7 +34,6 @@ int findBestNumberOfCoins(const vector<int> &coins, int money) {
         }
     }
     return num;
-
 }
 
 int main() {

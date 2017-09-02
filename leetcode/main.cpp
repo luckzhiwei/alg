@@ -1,46 +1,53 @@
-#include <iostream>
-#include <algorithm>
+#include<iostream>
+#include<queue>
+#include<cstdio>
+#include<cstring>
 
 using namespace std;
+bool map[501][501];
+int in[501];
+priority_queue<int, vector<int>, greater<int> > q;
 
-struct TreeNode {
-    int val;
-    TreeNode *left;
-    TreeNode *right;
+void topo(int n) {
+    for (int i = 1; i <= n; i++) {
+        if (in[i] == 0)
+            q.push(i);
+    }
+    int c = 1;
+    while (!q.empty()) {
+        int v = q.top();
+        q.pop();
+        if (c != n) {
+            cout << v << " ";
+            c++;
+        } else
+            cout << v << endl;
+        for (int i = 1; i <= n; i++) {
+            if (!map[v][i])
+                continue;
+            in[i]--;
+            if (!in[i])
+                q.push(i);
 
-    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-};
-
-class Solution {
-public:
-    int minDepth(TreeNode *root) {
-        if (root == NULL) {
-            return 0;
-        }
-        if (root->left == NULL && root->right == NULL) {
-            return 1;
-        } else {
-            return getMinDepth(root);
         }
     }
-
-    int getMinDepth(TreeNode *node) {
-        if (node->left == NULL && node->right == NULL) {
-            return 1;
-        } else if (node->left == NULL) {
-            return 1 + getMinDepth(node->right);
-        } else if (node->right == NULL) {
-            return 1 + getMinDepth(node->left);
-        } else {
-            return min(1 + getMinDepth(node->left), 1 + getMinDepth(node->right));
-        }
-
-    }
-};
+}
 
 int main() {
-    Solution sl;
-
-    int a;
-
+    int n,m,i,j;
+    while(cin>>n>>m)
+    {
+        int k=0;
+        memset(map,0,sizeof map);
+        memset(in,0,sizeof in);
+        while(m--)
+        {
+            cin>>i>>j;
+            if(map[i][j])
+                continue;
+            map[i][j]=1;
+            in[j]++;
+        }
+        topo(n);
+    }
 }
