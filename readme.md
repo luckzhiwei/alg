@@ -45,6 +45,6 @@
   5. [Bellman-ford 算法](./graph/bellman_ford)
   6. [Spfa 算法](./graph/spfa)
   7. [拓扑排序](./graph/top_sort_iml_pri_queue)
-  8. [欧拉回路](./graph/fluery)
+  8. [欧拉回路](./graph/fleury)
   
   
