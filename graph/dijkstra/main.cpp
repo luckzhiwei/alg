@@ -133,7 +133,6 @@ int main() {
         } while (pre != 1);
         cout << "-->" << pre;
         cout << "\n";
-
     }
     return 0;
 }

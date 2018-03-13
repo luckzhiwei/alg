@@ -83,6 +83,9 @@
 		<Unit filename="/Users/zhiwei/alg/leetcode/main.cpp">
 			<Option target="leetcode"/>
 		</Unit>
+		<Unit filename="/Users/zhiwei/alg/leetcode/main.h">
+			<Option target="leetcode"/>
+		</Unit>
 		<Unit filename="/Users/zhiwei/alg/leetcode/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
