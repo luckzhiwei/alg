@@ -34,7 +34,10 @@
   4. [深度优先遍历](./graph/depth_traverse)
 
 ### 排序： 
-  1. [堆排序](./heap_sort)  
+  1. [堆排序](./heap_sort)
+  2. [桶排序](./bucketSort)
+  3. [计数排序](,/countSort)
+  4. [快速排序](./quicksort)  
 
 ### 图论算法：
   1. [BFS 广度优先遍历](./graph/breath_first_search)
