@@ -40,8 +40,10 @@
   4. [快速排序](./quicksort)  
 
 ### 图论算法：
-  1. [BFS 广度优先遍历](./graph/breath_first_search)
-    * [bfs 拓扑排序](./graph/top_sort_iml_dfs)
+  1. [DFS  深度优先遍历](./graph/depth_traverse)
+    * [dfs 拓扑排序](./graph/top_sort_iml_dfs)
+  2. [BFS 广度优先遍历](./graph/breath_first_search)
+    * [BFS 广度优先遍历递归](./graph/breath_first_search_recursion)
   2. [Prim 算法](./graph/prim)
   3. [Kruskal 算法](./graph/kruskal)
   4. [Dijkstra 算法](./graph/dijkstra)

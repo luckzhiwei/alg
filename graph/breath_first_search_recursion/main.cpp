@@ -19,6 +19,7 @@ public:
 };
 
 vector<Node> graph;
+queue<int> queueGlobal;
 
 void init(const vector<string> &info, int nodesCount) {
     for (int i = 1; i <= nodesCount; i++) {
@@ -31,23 +32,27 @@ void init(const vector<string> &info, int nodesCount) {
     }
 }
 
-void breathFirstSearch(int n) {
-    queue<Node> queue;
-    graph[n - 1].color = GRAY;
-    queue.push(graph[n - 1]);
-    while (!queue.empty()) {
-        Node &node = queue.front();
+
+void breathFirstSearchRecurison(int count) {
+    int v = 0;
+    for (int i = 0; i < count; i++) {
+        int number = queueGlobal.front();
+        Node &node = graph[number - 1];
         for (auto it = node.Adj.begin(); it != node.Adj.end(); it++) {
             int index = *it;
             if (graph[index - 1].color == WHITE) {
                 Node &nodeAdj = graph[index - 1];
                 nodeAdj.pre = node.number;
                 nodeAdj.color = GRAY;
-                queue.push(nodeAdj);
+                queueGlobal.push(index);
+                v++;
             }
         }
-        queue.pop();
+        queueGlobal.pop();
         node.color = BALCK;
+    }
+    if (v != 0) {
+        breathFirstSearchRecurison(v);
     }
 }
 
@@ -76,6 +81,8 @@ int main() {
     info.push_back(string("6 7"));
     info.push_back(string("7 6"));
     init(info, 7);
-    breathFirstSearch(1);
+    queueGlobal.push(1);
+    graph[0].color = GRAY;
+    breathFirstSearchRecurison(1);
     return 0;
 }
