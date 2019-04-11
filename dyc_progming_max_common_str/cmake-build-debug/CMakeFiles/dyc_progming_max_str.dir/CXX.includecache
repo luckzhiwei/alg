@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -6,8 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhiwei/alg/dyc_progming_max_str/main.cpp
+/Users/zhiwei/alg/dyc_progming_max_common_str/main.cpp
 iostream
+-
+stdio.h
 -
 string
 -

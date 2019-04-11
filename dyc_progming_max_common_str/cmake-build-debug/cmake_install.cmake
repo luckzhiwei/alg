@@ -1,4 +1,4 @@
-# Install script for directory: /Users/zhiwei/alg/dyc_progming_max_str
+# Install script for directory: /Users/zhiwei/alg/dyc_progming_max_common_str
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/zhiwei/alg/dyc_progming_max_str/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/zhiwei/alg/dyc_progming_max_common_str/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
